@@ -180,13 +180,3 @@ GitHub Docs+1
 Important security consideration
 
 Piston executes arbitrary code. Don't expose its API publicly without putting proper authentication, request limits and other security controls in front of it. Also, make sure its runtime package storage is persistent.
-
-## One important question
-
-What is your intended use of Piston?
-
-- A. A programming education platform where students submit code and receive execution results.
-- B. A general-purpose online compiler supporting multiple programming languages.
-- C. A backend API for your own web applications.
-
-I'm asking because I'd configure the Docker setup, runtime selection, storage and API security slightly differently depending on your intended use.
