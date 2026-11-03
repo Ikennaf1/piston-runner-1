@@ -1,0 +1,28 @@
+{
+    "name": "piston-test",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {
+            "version": "latest"
+        }
+    },
+    "forwardPorts": [2000],
+    "portsAttributes": {
+        "2000": {
+            "label": "Piston API",
+            "onAutoForward": "notify"
+        }
+    },
+    "postStartCommand": "docker --version && docker compose version",
+    "hostRequirements": {
+        "cpus": 4,
+        "memory": "8gb"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.vscode-json"
+            ]
+        }
+    }
+}
