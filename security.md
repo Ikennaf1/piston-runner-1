@@ -345,30 +345,4 @@ I'd build this in two stages:
 1. Get Piston running behind Nginx in Codespaces, with the API port hidden.
 2. Build a small Node.js or PHP authentication gateway that connects your student platform to Piston.
 
-One question before we proceed:
-
-What backend language does your student platform use?
-
-Backend technology
-
-PHP
-
-Node.js
-
-Python
-
-Other / not decided
-
-How will students access Piston?
-
-Through my website after logging in
-
-Directly through an API
-
-Both
-
-Continue
-
-I can then give you a complete working implementation rather than just security recommendations.&#x20;
-
 One final note: Codespaces is excellent for development and testing, but I would move the execution engine to a dedicated server before using it as a production service for students.
