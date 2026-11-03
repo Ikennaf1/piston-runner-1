@@ -175,6 +175,11 @@ GitHub normally forwards ports privately. You can use the forwarded address with
 
 GitHub Docs+1
 
+## To stop / save quota (Codespaces)
+
+- Run `gh codespace stop` to stop immedialtely, or just close tab (which auto-stops after 30 mins of idle time).
+- Delete codespace when done: GitHub > Code > Codespaces > (click) ... > Delete
+
 
 
 Important security consideration
