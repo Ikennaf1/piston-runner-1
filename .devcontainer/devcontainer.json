@@ -2,7 +2,7 @@
     "name": "piston-test",
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
     "features": {
-        "ghcr.io/devcontainers/features/docker-in-docker:2": {
+        "ghcr.io/devcontainers/features/docker-in-docker:4": {
             "version": "latest"
         }
     },
@@ -13,7 +13,7 @@
             "onAutoForward": "notify"
         }
     },
-    "postStartCommand": "docker --version && docker compose version",
+    "postStartCommand": "docker --version && (docker compose version || docker-compose version)",
     "hostRequirements": {
         "cpus": 4,
         "memory": "8gb"
